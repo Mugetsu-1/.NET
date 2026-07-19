@@ -8,8 +8,6 @@ namespace Unit1CH1._6
         /*
         static void Main(string[] args)
         {
-            // ---- List<T> ----
-            Console.WriteLine("=== List<T> ===");
             List<string> fruits = new List<string> { "Apple", "Banana", "Cherry" };
             fruits.Add("Date");
             fruits.Remove("Banana");
@@ -17,8 +15,6 @@ namespace Unit1CH1._6
             foreach (string fruit in fruits)
                 Console.WriteLine($"  {fruit}");
 
-            // ---- Dictionary<TKey, TValue> ----
-            Console.WriteLine("\n=== Dictionary<TKey, TValue> ===");
             Dictionary<int, string> students = new Dictionary<int, string>();
             students.Add(101, "Alice");
             students.Add(102, "Bob");
@@ -27,8 +23,6 @@ namespace Unit1CH1._6
             foreach (var kvp in students)
                 Console.WriteLine($"  ID: {kvp.Key}, Name: {kvp.Value}");
 
-            // ---- SortedList<TKey, TValue> ----
-            Console.WriteLine("\n=== SortedList<TKey, TValue> ===");
             SortedList<int, string> sorted = new SortedList<int, string>();
             sorted.Add(5, "Five");
             sorted.Add(1, "One");
@@ -37,8 +31,6 @@ namespace Unit1CH1._6
             foreach (var kvp in sorted)
                 Console.WriteLine($"  Key: {kvp.Key}, Value: {kvp.Value}");
 
-            // ---- Queue<T> ----
-            Console.WriteLine("\n=== Queue<T> ===");
             Queue<double> queue = new Queue<double>();
             queue.Enqueue(1.1);
             queue.Enqueue(2.2);
@@ -47,8 +39,6 @@ namespace Unit1CH1._6
             while (queue.Count > 0)
                 Console.WriteLine($"  Dequeue: {queue.Dequeue()}");
 
-            // ---- Stack<T> ----
-            Console.WriteLine("\n=== Stack<T> ===");
             Stack<int> stack = new Stack<int>();
             stack.Push(10);
             stack.Push(20);
@@ -57,8 +47,6 @@ namespace Unit1CH1._6
             while (stack.Count > 0)
                 Console.WriteLine($"  Pop: {stack.Pop()}");
 
-            // ---- HashSet<T> ----
-            Console.WriteLine("\n=== HashSet<T> ===");
             HashSet<int> numbers = new HashSet<int> { 1, 2, 3, 4, 5, 3, 2, 1 };
             Console.WriteLine("HashSet (no duplicates):");
             foreach (int num in numbers)

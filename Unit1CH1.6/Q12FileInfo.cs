@@ -29,7 +29,6 @@ namespace Unit1CH1._6
             fileInfo.Refresh();
 
             // Display file properties
-            Console.WriteLine("=== File Properties ===");
             Console.WriteLine($"  Name: {fileInfo.Name}");
             Console.WriteLine($"  Full Path: {fileInfo.FullName}");
             Console.WriteLine($"  Directory: {fileInfo.DirectoryName}");

@@ -34,8 +34,7 @@ namespace Unit1CH1._6
                 Email = "saugat@example.com"
             };
 
-            // ---- Serialization (JSON) ----
-            Console.WriteLine("=== Serialization ===");
+            Console.WriteLine("Serialization:");
             Console.WriteLine("Original person object:");
             originalPerson.Display();
 
@@ -43,8 +42,7 @@ namespace Unit1CH1._6
             File.WriteAllText(filePath, jsonString);
             Console.WriteLine("\nObject serialized to JSON successfully.\n");
 
-            // ---- Deserialization (JSON) ----
-            Console.WriteLine("=== Deserialization ===");
+            Console.WriteLine("\nDeserialization:");
             string readJson = File.ReadAllText(filePath);
             Person deserializedPerson = JsonSerializer.Deserialize<Person>(readJson);
 

@@ -8,8 +8,6 @@ namespace Unit1CH1._6
         /*
         static void Main(string[] args)
         {
-            // ---- ArrayList ----
-            Console.WriteLine("=== ArrayList ===");
             ArrayList arrayList = new ArrayList();
             arrayList.Add(10);
             arrayList.Add("Hello");
@@ -19,8 +17,6 @@ namespace Unit1CH1._6
             foreach (var item in arrayList)
                 Console.WriteLine($"  {item} (Type: {item.GetType().Name})");
 
-            // ---- SortedList ----
-            Console.WriteLine("\n=== SortedList ===");
             SortedList sortedList = new SortedList();
             sortedList.Add(3, "Three");
             sortedList.Add(1, "One");
@@ -29,8 +25,6 @@ namespace Unit1CH1._6
             foreach (DictionaryEntry entry in sortedList)
                 Console.WriteLine($"  Key: {entry.Key}, Value: {entry.Value}");
 
-            // ---- Stack ----
-            Console.WriteLine("\n=== Stack ===");
             Stack stack = new Stack();
             stack.Push("First");
             stack.Push("Second");
@@ -39,8 +33,6 @@ namespace Unit1CH1._6
             while (stack.Count > 0)
                 Console.WriteLine($"  Pop: {stack.Pop()}");
 
-            // ---- Queue ----
-            Console.WriteLine("\n=== Queue ===");
             Queue queue = new Queue();
             queue.Enqueue("Item 1");
             queue.Enqueue("Item 2");
@@ -49,8 +41,6 @@ namespace Unit1CH1._6
             while (queue.Count > 0)
                 Console.WriteLine($"  Dequeue: {queue.Dequeue()}");
 
-            // ---- Hashtable ----
-            Console.WriteLine("\n=== Hashtable ===");
             Hashtable hashtable = new Hashtable();
             hashtable.Add("name", "Saugat");
             hashtable.Add("age", 21);
@@ -59,8 +49,6 @@ namespace Unit1CH1._6
             foreach (DictionaryEntry entry in hashtable)
                 Console.WriteLine($"  Key: {entry.Key}, Value: {entry.Value}");
 
-            // ---- BitArray ----
-            Console.WriteLine("\n=== BitArray ===");
             BitArray bitArray = new BitArray(8);
             bitArray[0] = true;
             bitArray[2] = true;

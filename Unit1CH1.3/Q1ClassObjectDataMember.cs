@@ -2,7 +2,7 @@ using System;
 
 namespace Unit1CH1._3
 {
-
+/*
     class Student
     {
         // Data members 
@@ -26,7 +26,7 @@ namespace Unit1CH1._3
             Console.WriteLine("Course updated to: " + course);
         }
     }
-
+*/
     internal class CODM
     {
         /*

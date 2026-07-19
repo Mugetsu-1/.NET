@@ -30,6 +30,7 @@ namespace Unit1CH1._3
 
     internal class OptionalArgument
     {
+        /*
         static void Main(string[] args)
         {
             OptionalArgsDemo demo = new OptionalArgsDemo();
@@ -57,5 +58,6 @@ namespace Unit1CH1._3
             demo.DisplayInfo("Project C", 102, false);
             demo.DisplayInfo("Project D", 103, true, "Completed");
         }
+        */
     }
 }

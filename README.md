@@ -8,3 +8,4 @@ C# practice solutions for .NET assignments.
 - **Unit1CH1.3** - Practice questions for Unit 1, Chapter 1.3 covering OOP fundamentals: classes, objects, constructors, destructors, method overloading, arrays, and string manipulation.
 - **Unit1CH1.6** - Practice questions for Unit 1, Chapter 1.6 covering delegates, events, collections (generic and non-generic), and File I/O operations.
 - **Lab1** - Lab assignments covering Unit 1 Chapters 1.4 and 1.5: inheritance, polymorphism, interfaces, abstraction, exception handling, partial classes, and advanced OOP concepts.
+- **Lab2** - Lab assignments covering delegates, multicast delegates, events, multicast events, custom events, non-generic and generic collections, File I/O, serialization/deserialization, async/await programming, LINQ query and method syntax, and built-in/custom attributes.

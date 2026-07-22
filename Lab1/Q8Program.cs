@@ -7,36 +7,16 @@ namespace PolymorphismApp
         /*
         static void Main(string[] args)
         {
-            Console.WriteLine("RUNTIME POLYMORPHISM\n");
+            Animal[] animals = { new Dog("Buddy"), new Cat("Whiskers"), new Bird("Tweety"), new Snake("Kaa"), new Dog("Max") };
 
-            // Creating array of base class references
-            Animal[] animals = new Animal[5];
-
-            // Assigning derived class objects to base class references
-            animals[0] = new Dog("Buddy");
-            animals[1] = new Cat("Whiskers");
-            animals[2] = new Bird("Tweety");
-            animals[3] = new Snake("Kaa");
-            animals[4] = new Dog("Max");
-
-            // Demonstrating runtime polymorphism
             Console.WriteLine("All Animals Making Sounds");
-            foreach (Animal animal in animals)
-            {
-                animal.MakeSound();  // Calls overridden method based on actual object type
-            }
+            foreach (Animal a in animals) a.MakeSound();
 
-            Console.WriteLine("\nAll Animals Moving");
-            foreach (Animal animal in animals)
-            {
-                animal.Move();  // Calls overridden method based on actual object type
-            }
+            Console.WriteLine("All Animals Moving");
+            foreach (Animal a in animals) a.Move();
 
-            Console.WriteLine("\nNon-Virtual Method (No Polymorphism)");
-            foreach (Animal animal in animals)
-            {
-                animal.Eat();  // Calls base class method (not overridden)
-            }
+            Console.WriteLine("Non-Virtual Method (No Polymorphism)");
+            foreach (Animal a in animals) a.Eat();
         }
         */
     }

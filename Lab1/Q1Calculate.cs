@@ -12,19 +12,10 @@ namespace CalculateApp
             num2 = y;
         }
 
-        public void FindSum()
-        {
-            Console.WriteLine($"Sum = {num1 + num2}");
-        }
+        public void FindSum() => Console.WriteLine($"Sum = {num1 + num2}");
 
-        public int FindMulti()
-        {
-            return num1 * num2;
-        }
+        public int FindMulti() => num1 * num2;
 
-        public void FindDifference()
-        {
-            Console.WriteLine($"Difference = {num1 - num2}");
-        }
+        public void FindDifference() => Console.WriteLine($"Difference = {num1 - num2}");
     }
 }

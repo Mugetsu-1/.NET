@@ -9,16 +9,12 @@ namespace CalculateApp
         {
             Calculate calc1 = new Calculate();
             calc1.setData(20, 8);
-            
             calc1.FindSum();
             calc1.FindDifference();
             Console.WriteLine($"Multiplication = {calc1.FindMulti()}");
 
-            Console.WriteLine();
-
             Calculate calc2 = new Calculate();
             calc2.setData(50, 15);
-            
             calc2.FindSum();
             calc2.FindDifference();
             Console.WriteLine($"Multiplication = {calc2.FindMulti()}");

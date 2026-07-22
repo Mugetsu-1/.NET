@@ -7,28 +7,8 @@ namespace AbstractApp
         /*
         static void Main(string[] args)
         {
-            Console.WriteLine("ABSTRACT CLASS\n");
-
-            // Creating objects
-            Rectangle rect = new Rectangle(10, 5, "Red");
-            Circle circle = new Circle(7, "Blue");
-            Triangle tri = new Triangle(8, 6, "Green");
-
-            // Displaying shapes
-            rect.Display();
-            circle.Display();
-            tri.Display();
-
-            Console.WriteLine("\nPOLYMORPHISM WITH ABSTRACT CLASS\n");
-
-            // Array of abstract class references
-            Shape[] shapes = { rect, circle, tri };
-
-            foreach (Shape shape in shapes)
-            {
-                shape.Display();
-                Console.WriteLine();
-            }
+            Shape[] shapes = { new Rectangle(10, 5, "Red"), new Circle(7, "Blue"), new Triangle(8, 6, "Green") };
+            foreach (Shape s in shapes) { s.Display(); s.ShowColor(); Console.WriteLine(); }
         }
         */
     }

@@ -30,7 +30,7 @@ namespace BaseKeywordApp
         /*
         static void Main(string[] args)
         {
-            Manager mgr = new Manager(101, "Rajesh Kumar", 35, "IT", 85000, 12);
+            Manager mgr = new Manager(101, "Saugat Thapa", 21, "IT", 85000, 12);
             mgr.DisplayManager();
         }
         */

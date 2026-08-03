@@ -4,6 +4,7 @@ namespace PartialClassApp
 {
     class Program
     {
+        /*
         static void Main(string[] args)
         {
             Calculator calc = new Calculator();
@@ -12,5 +13,6 @@ namespace PartialClassApp
             Console.WriteLine("Multiply: " + calc.Multiply(10, 5));
             Console.WriteLine("Divide: " + calc.Divide(10, 5));
         }
+        */
     }
 }

@@ -8,7 +8,7 @@ namespace DelegateApp
     {
         static double Add(double x, double y) => x + y;
         static double Multiply(double x, double y) => x * y;
-/*
+        /*
         static void Main(string[] args)
         {
             Operation op = Add;

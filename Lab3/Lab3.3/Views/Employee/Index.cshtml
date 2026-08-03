@@ -1,0 +1,20 @@
+@model IEnumerable<Lab3._3.Models.Employee>
+
+<h1>Employees</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Salary</th>
+    </tr>
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>@emp.Id</td>
+            <td>@emp.Name</td>
+            <td>@emp.Department</td>
+            <td>@emp.Salary</td>
+        </tr>
+    }
+</table>

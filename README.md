@@ -9,4 +9,6 @@ C# practice solutions for .NET assignments.
 - **Unit1CH1.6** - Practice questions for Unit 1, Chapter 1.6 covering delegates, events, collections (generic and non-generic), and File I/O operations.
 - **Lab1** - Lab assignments covering Unit 1 Chapters 1.4 and 1.5: inheritance, polymorphism, interfaces, abstraction, exception handling, partial classes, and advanced OOP concepts.
 - **Lab2** - Lab assignments covering delegates, multicast delegates, events, multicast events, custom events, non-generic and generic collections, File I/O, serialization/deserialization, async/await programming, LINQ query and method syntax, and built-in/custom attributes.
-- **Lab3** - ASP.NET Core lab projects for web app practice: a basic app, an MVC app, and a second MVC app variant.
+- **Lab3.1** - ASP.NET Core starter app with static content and basic hosting setup.
+- **Lab3.2** - ASP.NET Core MVC app for student data and controller/view practice.
+- **Lab3.3** - ASP.NET Core MVC app for employee management with repository-style models and views.

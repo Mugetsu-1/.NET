@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace ExceptionApp
@@ -23,3 +24,6 @@ namespace ExceptionApp
         */
     }
 }
+
+#endif
+

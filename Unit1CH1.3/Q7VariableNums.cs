@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace Unit1CH1._3
@@ -63,3 +64,6 @@ namespace Unit1CH1._3
         */
     }
 }
+
+#endif
+

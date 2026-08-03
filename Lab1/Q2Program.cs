@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace NumberApp
@@ -25,3 +26,6 @@ namespace NumberApp
         */
     }
 }
+
+#endif
+

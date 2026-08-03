@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace IndexerApp
@@ -43,3 +44,6 @@ namespace IndexerApp
         */
     }
 }
+
+#endif
+

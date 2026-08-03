@@ -1,4 +1,5 @@
-﻿using System;
+#if false
+using System;
 
 namespace Unit1CH1._2
 {
@@ -20,3 +21,6 @@ namespace Unit1CH1._2
         */
     }
 }
+
+#endif
+

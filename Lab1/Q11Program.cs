@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace AbstractApp
@@ -13,3 +14,6 @@ namespace AbstractApp
         */
     }
 }
+
+#endif
+

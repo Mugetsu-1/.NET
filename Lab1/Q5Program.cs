@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace InheritanceApp
@@ -24,3 +25,6 @@ namespace InheritanceApp
         */
     }
 }
+
+#endif
+

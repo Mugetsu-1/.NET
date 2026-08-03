@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.Reflection;
 
@@ -36,3 +37,6 @@ namespace CustomAttributesApp
         */
     }
 }
+
+#endif
+

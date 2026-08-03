@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.IO;
 
@@ -28,3 +29,6 @@ namespace FileIOApp
         */
     }
 }
+
+#endif
+

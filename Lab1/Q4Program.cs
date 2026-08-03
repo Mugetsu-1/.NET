@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace EmployeeApp
@@ -18,3 +19,6 @@ namespace EmployeeApp
         */
     }
 }
+
+#endif
+

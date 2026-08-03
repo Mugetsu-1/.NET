@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.Collections;
 
@@ -30,3 +31,6 @@ namespace NonGenericCollectionsApp
         */
     }
 }
+
+#endif
+

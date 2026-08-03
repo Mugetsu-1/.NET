@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace MulticastEventApp
@@ -35,3 +36,6 @@ namespace MulticastEventApp
         */
     }
 }
+
+#endif
+

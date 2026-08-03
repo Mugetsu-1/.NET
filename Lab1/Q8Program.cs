@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace PolymorphismApp
@@ -21,3 +22,6 @@ namespace PolymorphismApp
         */
     }
 }
+
+#endif
+

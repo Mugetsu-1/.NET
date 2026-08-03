@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -47,3 +48,6 @@ namespace BuiltInAttributesApp
         */
     }
 }
+
+#endif
+

@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace PropertyApp
@@ -21,3 +22,6 @@ namespace PropertyApp
         */
     }
 }
+
+#endif
+

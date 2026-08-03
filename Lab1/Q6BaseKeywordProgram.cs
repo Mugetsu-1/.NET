@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace BaseKeywordApp
@@ -36,3 +37,6 @@ namespace BaseKeywordApp
         */
     }
 }
+
+#endif
+

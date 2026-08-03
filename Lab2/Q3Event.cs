@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace EventApp
@@ -24,3 +25,6 @@ namespace EventApp
         */
     }
 }
+
+#endif
+

@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace CalculateApp
@@ -22,3 +23,6 @@ namespace CalculateApp
         */
     }
 }
+
+#endif
+

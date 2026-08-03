@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.IO;
 
@@ -39,3 +40,6 @@ namespace Unit1CH1._6
         */
     }
 }
+
+#endif
+

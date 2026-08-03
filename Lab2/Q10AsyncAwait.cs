@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.Threading.Tasks;
 
@@ -25,3 +26,6 @@ namespace AsyncAwaitApp
         */
     }
 }
+
+#endif
+

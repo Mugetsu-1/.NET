@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace DelegateApp
@@ -20,3 +21,6 @@ namespace DelegateApp
         */
     }
 }
+
+#endif
+

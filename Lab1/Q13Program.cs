@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace InterfaceApp
@@ -19,3 +20,6 @@ namespace InterfaceApp
         */
     }
 }
+
+#endif
+

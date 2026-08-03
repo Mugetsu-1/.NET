@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace MultipleInheritanceApp
@@ -27,3 +28,6 @@ namespace MultipleInheritanceApp
         */
     }
 }
+
+#endif
+

@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace PartialClassApp
@@ -16,3 +17,6 @@ namespace PartialClassApp
         */
     }
 }
+
+#endif
+

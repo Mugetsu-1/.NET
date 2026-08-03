@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.Collections.Generic;
 
@@ -55,3 +56,6 @@ namespace Unit1CH1._6
         */
     }
 }
+
+#endif
+

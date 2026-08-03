@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.IO;
 using System.Text.Json;
@@ -59,3 +60,6 @@ namespace Unit1CH1._6
         */
     }
 }
+
+#endif
+

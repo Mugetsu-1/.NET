@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.Linq;
 
@@ -24,3 +25,6 @@ namespace LinqQueryApp
         */
     }
 }
+
+#endif
+

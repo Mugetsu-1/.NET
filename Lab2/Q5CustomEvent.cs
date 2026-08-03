@@ -1,3 +1,4 @@
+#if false
 using System;
 
 namespace CustomEventApp
@@ -53,3 +54,6 @@ namespace CustomEventApp
         */
     }
 }
+
+#endif
+

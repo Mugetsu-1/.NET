@@ -1,3 +1,4 @@
+#if false
 using System;
 using System.IO;
 using System.Text.Json;
@@ -33,3 +34,6 @@ namespace SerializationApp
         */
     }
 }
+
+#endif
+

@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Lab3._2.Models;
 
@@ -10,6 +12,11 @@ namespace Lab3._2.Controllers
             new Student { Id = 1, Name = "John", Age = 20, Course = "Math" },
             new Student { Id = 2, Name = "Jane", Age = 22, Course = "Science" }
         };
+
+        public IActionResult Index()
+        {
+            return View(students);
+        }
 
         public IActionResult Details(int id)
         {

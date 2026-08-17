@@ -14,8 +14,7 @@ namespace Lab3._3.Controllers
 
         public IActionResult Index()
         {
-            var employees = _repo.GetAll();
-            return View(employees);
+            return View("Employee", _repo.GetAll());
         }
 
         public IActionResult Details(int id)

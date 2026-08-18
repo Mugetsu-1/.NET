@@ -9,8 +9,8 @@ namespace Lab3._2.Controllers
     {
         private static List<Student> students = new List<Student>
         {
-            new Student { Id = 1, Name = "John", Age = 20, Course = "Math" },
-            new Student { Id = 2, Name = "Jane", Age = 22, Course = "Science" }
+            new Student { Id = 1, Name = "Saugat", Age = 20, Course = "Math" },
+            new Student { Id = 2, Name = "Ello", Age = 22, Course = "Science" }
         };
 
         public IActionResult Index()

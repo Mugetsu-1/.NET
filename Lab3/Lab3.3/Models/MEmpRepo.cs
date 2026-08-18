@@ -8,8 +8,8 @@ namespace Lab3._3.Models
     {
         private static List<Employee> employees = new List<Employee>
         {
-            new Employee { Id = 1, Name = "Alice", Department = "IT", Salary = 75000 },
-            new Employee { Id = 2, Name = "Bob", Department = "HR", Salary = 65000 }
+            new Employee { Id = 1, Name = "Saugat", Department = "IT", Salary = 75000 },
+            new Employee { Id = 2, Name = "Ello", Department = "HR", Salary = 65000 }
         };
 
         public List<Employee> GetAll()

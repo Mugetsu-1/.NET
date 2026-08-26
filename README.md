@@ -14,3 +14,5 @@ C# practice solutions for .NET assignments.
 - **Lab3.3** - ASP.NET Core MVC app for employee management with repository-style models and views.
 - **StdMVCDetail** - ASP.NET Core MVC app for student data management with repository-style models and full CRUD views (list, details, create, edit, delete).
 - **StdFormMVC** - ASP.NET Core MVC app with a student detail form (name, roll no, age, department, address, GPA) using a table-style form layout, in-memory list storage, and validation.
+- **Lab4** - ASP.NET Core MVC app focusing on Controllers, Actions, Action results and Action Selectors.
+- **Lab5** - ASP.NET Core MVC app on Razor Views.

@@ -16,4 +16,4 @@ C# practice solutions for .NET assignments.
 - **StdFormMVC** - ASP.NET Core MVC app with a student detail form (name, roll no, age, department, address, GPA) using a table-style form layout, in-memory list storage, and validation.
 - **Lab4** - ASP.NET Core MVC app focusing on Controllers, Actions, Action results and Action Selectors.
 - **Lab5** - ASP.NET Core MVC app on Razor Views.
-- **Lab6**
+- **Lab6** - ASP.NET core MVC app on TagHelepr, Routing and Models.

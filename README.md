@@ -17,3 +17,6 @@ C# practice solutions for .NET assignments.
 - **Lab4** - ASP.NET Core MVC app focusing on Controllers, Actions, Action results and Action Selectors.
 - **Lab5** - ASP.NET Core MVC app on Razor Views.
 - **Lab6** - ASP.NET core MVC app on TagHelepr, Routing and Models.
+- **Lab7** - ASP.NET Core MVC app for Unit 5.1 (Working with Database using ADO.NET).
+- **Lab8** - ASP.NET Core MVC app for Unit 5.2 (Working with Database using Entity Framework).
+- **Lab9** - ASP.NET Core MVC app for Unit 6 (State Management).

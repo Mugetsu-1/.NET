@@ -1,0 +1,18 @@
+@model Lab9._1.Models.User
+
+@{
+    ViewData["Title"] = "SetHiddenFieldValue";
+}
+
+<form asp-action="SetHiddenFieldValue">
+    <h5>SetHiddenFieldValue: User</h5>
+    <div>
+        <hr />
+        @Html.HiddenFor(model => model.Id)
+        <p>Name: @Html.DisplayFor(model => model.Name)</p>
+        <p>Age: @Html.DisplayFor(model => model.Age)</p>
+    </div>
+    <div>
+        <input type="submit" value="Submit" />
+    </div>
+</form>

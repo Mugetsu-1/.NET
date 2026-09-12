@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "Third";
+    var userId = TempData.Peek("UserId")?.ToString();
+}
+
+<h1>Third</h1>
+User Id : @userId
+<p>Read with TempData.Peek(), so it is not deleted.</p>
+<a asp-controller="TempData" asp-action="First">Go First</a>

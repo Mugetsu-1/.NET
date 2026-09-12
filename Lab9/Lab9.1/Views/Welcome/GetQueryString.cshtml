@@ -1,0 +1,15 @@
+@model Lab9._1.Models.User
+
+@{
+    ViewData["Title"] = "GetQueryString";
+}
+
+<h5>GetQueryString : User</h5>
+<div>
+    <hr />
+    <p>Name: @Html.DisplayFor(model => model.Name)</p>
+    <p>Age: @Html.DisplayFor(model => model.Age)</p>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

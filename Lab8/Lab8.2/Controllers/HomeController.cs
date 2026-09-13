@@ -1,20 +1,13 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using Lab8._2.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Lab8._2.Controllers;
 
+// Home page - links to the 4 CRUD sections
 public class HomeController : Controller
 {
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
+    public IActionResult Index() => View();
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

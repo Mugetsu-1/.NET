@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Lab8._2.Models;
 
-// One DbContext for all four entities (chapter 5.2)
+// One DbContext for all four entities
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)

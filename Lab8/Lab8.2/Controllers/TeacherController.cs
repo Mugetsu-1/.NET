@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Lab8._2.Controllers;
 
-// Teacher CRUD (Unit 5.2, Lab question 2)
+// Teacher CRUD (Lab question 2)
 public class TeacherController : Controller
 {
     private readonly AppDbContext _context;

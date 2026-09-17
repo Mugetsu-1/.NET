@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EFExample.Models
 {
-    // Custom DbContext class (chapter 5.2)
+    // Custom DbContext class
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)

@@ -6,14 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Register AppDbContext with the SQL Server provider (chapter 5.2).
+// Register AppDbContext with the SQL Server provider.
 // The connection string is a placeholder - replace it with your own.
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
-// One-time database creation (chapter 5.2, step 7).
+// One-time database creation.
 // Wrapped in try/catch so the app still starts before you set the real connection string.
 try
 {

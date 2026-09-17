@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- EF Core packages (chapter 5.2) -->
+    <!-- EF Core packages -->
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.12">
       <PrivateAssets>all</PrivateAssets>

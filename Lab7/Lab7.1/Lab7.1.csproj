@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <!-- ADO.NET data provider for SQL Server (chapter 5.1) -->
+    <!-- ADO.NET data provider for SQL Server -->
     <PackageReference Include="System.Data.SqlClient" Version="4.9.1" />
   </ItemGroup>
 

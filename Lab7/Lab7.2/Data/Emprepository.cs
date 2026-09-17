@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 
 namespace ADO.Data
 {
-    // All database logic lives here (chapter 5.1, Lab question 2).
+    // All database logic lives here (Lab question 2).
     // The controller only calls these methods.
     public class Emprepository
     {

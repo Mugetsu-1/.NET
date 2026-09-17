@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EFExample.Models
 {
-    // Student entity with the exact fields required by the Lab (chapter 5.2):
+    // Student entity with the exact fields required by the Lab:
     // id, Name, Roll, Address, email, phone, DOB, Age, Semester, GPA
     public class Student
     {

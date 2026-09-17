@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Lab8._2.Controllers;
 
-// Employee CRUD (Unit 5.2, Lab question 2)
+// Employee CRUD (Lab question 2)
 public class EmployeeController : Controller
 {
     private readonly AppDbContext _context;

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ADO.Controllers
 {
     // The controller only handles HTTP and delegates ALL database logic
-    // to Data/Emprepository.cs (chapter 5.1, Lab question 2).
+    // to Data/Emprepository.cs (Lab question 2).
     public class HomeController : Controller
     {
         private readonly Emprepository _empRepository;

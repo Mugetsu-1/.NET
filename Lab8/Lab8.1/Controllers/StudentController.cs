@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EFExample.Controllers
 {
-    // CRUD operations using EF Core (chapter 5.2, Lab question 1).
+    // CRUD operations using EF Core (Lab question 1).
     public class StudentController : Controller
     {
         private readonly AppDbContext _context;

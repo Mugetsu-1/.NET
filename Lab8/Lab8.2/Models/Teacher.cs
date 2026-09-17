@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Lab8._2.Models;
 
-// Teacher entity (Unit 5.2, Lab question 2)
+// Teacher entity (Lab question 2)
 public class Teacher
 {
     public int Id { get; set; }

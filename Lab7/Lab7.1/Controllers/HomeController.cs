@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using System.Data;
 using System.Data.SqlClient;
 
-// The chapter requires the System.Data.SqlClient provider (Unit 5.1).
+// Uses System.Data.SqlClient provider as required by the lab.
 // Microsoft marks it obsolete in favor of Microsoft.Data.SqlClient; this is expected.
-// The chapter also uses string concatenation for SQL exactly as shown in the notes.
+// Note: String concatenation is used for SQL as shown in the lab notes.
 #pragma warning disable CS0618, CS8600, CS8601, CS8602, CS8604
 
 namespace ADO.Controllers
@@ -20,7 +20,7 @@ namespace ADO.Controllers
         }
 
         // Read all records from the Inventory table using SqlDataAdapter + DataTable
-        // and the ReadInventory stored procedure. (chapter 5.1)
+        // and the ReadInventory stored procedure.
         public IActionResult Index()
         {
             List<Inventory> inventoryList = new List<Inventory>();
@@ -57,7 +57,7 @@ namespace ADO.Controllers
             return View(inventoryList);
         }
 
-        // Read a single record using SqlDataReader. (chapter 5.1)
+        // Read a single record using SqlDataReader.
         public IActionResult GetSingle(int id)
         {
             Inventory inventory = new Inventory();
@@ -96,7 +96,7 @@ namespace ADO.Controllers
             return View();
         }
 
-        // Insert record using SqlConnection + SqlCommand. (chapter 5.1)
+        // Insert record using SqlConnection + SqlCommand.
         [HttpPost]
         public IActionResult Create(Inventory inventory)
         {
@@ -151,7 +151,7 @@ namespace ADO.Controllers
             return View(inventory);
         }
 
-        // Update record using SqlConnection + SqlCommand. (chapter 5.1)
+        // Update record using SqlConnection + SqlCommand.
         [HttpPost]
         public IActionResult Update(Inventory inventory, int id)
         {
@@ -172,7 +172,7 @@ namespace ADO.Controllers
             return RedirectToAction("Index");
         }
 
-        // Delete record using SqlConnection + SqlCommand. (chapter 5.1)
+        // Delete record using SqlConnection + SqlCommand.
         [HttpPost]
         public IActionResult Delete(int id)
         {

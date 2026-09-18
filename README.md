@@ -19,4 +19,19 @@ C# practice solutions for .NET assignments.
 - **Lab6** - ASP.NET core MVC app on TagHelepr, Routing and Models.
 - **Lab7** - ASP.NET Core MVC app for Unit 5.1 (Working with Database using ADO.NET).
 - **Lab8** - ASP.NET Core MVC app for Unit 5.2 (Working with Database using Entity Framework).
-- **Lab9** - ASP.NET Core MVC app for Unit 6 (State Management).
+- **Lab9** - ASP.NET Core MVC app for Unit 6 (State Management): Session state, TempData, Cookies, Query Strings and Hidden Fields.
+- **Lab10** - ASP.NET Core MVC app for Unit 8 (Securing ASP.NET Core Application): ASP.NET Core Identity with EF Core and SQL Server, custom `AppUser`, user registration (username, email, password, confirm password), login/logout, and `[Authorize]` secured resources.
+
+## Database setup
+
+Labs that use SQL Server (`SAUGAT\SQLEXPRESS`) create their database as follows:
+
+| Lab | Database | How it is created |
+| :-- | :-- | :-- |
+| Lab7.1 | `Company` | Run `SQLSetup.sql` in SSMS (see `Lab7\Lab7.1\README.md`) |
+| Lab7.2 | `EmployeeDB` | Run `SQLSetup.sql` in SSMS (see `Lab7\Lab7.2\README.md`) |
+| Lab8.1 | `StudentDB` | EF Core `EnsureCreated()` on first run (see `Lab8\Lab8.1\README.md`) |
+| Lab8.2 | `SchoolDB` | EF Core `EnsureCreated()` on first run |
+| Lab10 | `IdentityUserDB` | EF Core migration: `dotnet ef database update` (see `Lab10\README.md`) |
+
+Note: `Lab9` and `Lab10` each have a single lab question, so the project sits directly in the lab folder (`Lab9\Lab9.csproj`, `Lab10\Lab10.csproj`) instead of a `LabX.Y` sub-folder.

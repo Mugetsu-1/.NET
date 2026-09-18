@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lab9._1.Controllers;
+namespace Lab9.Controllers;
 
 public class TempDataController : Controller
 {

@@ -4,7 +4,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Lab9._1</RootNamespace>
+    <RootNamespace>Lab9</RootNamespace>
   </PropertyGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using Lab9._1.Models;
+using Lab9.Models;
 
-namespace Lab9._1.Controllers;
+namespace Lab9.Controllers;
 
 public class WelcomeController : Controller
 {

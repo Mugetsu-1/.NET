@@ -34,4 +34,4 @@ Labs that use SQL Server (`SAUGAT\SQLEXPRESS`) create their database as follows:
 | Lab8.2 | `SchoolDB` | EF Core `EnsureCreated()` on first run |
 | Lab10 | `IdentityUserDB` | EF Core migration: `dotnet ef database update` (see `Lab10\README.md`) |
 
-Note: `Lab9` and `Lab10` each have a single lab question, so the project sits directly in the lab folder (`Lab9\Lab9.csproj`, `Lab10\Lab10.csproj`) instead of a `LabX.Y` sub-folder.
+

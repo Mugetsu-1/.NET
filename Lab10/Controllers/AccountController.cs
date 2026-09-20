@@ -1,9 +1,13 @@
 using Lab10.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lab10.Controllers
 {
+    // Only authenticated users reach the actions of this controller by default;
+    // Register/Login are opened up again with [AllowAnonymous] (Unit 8 slide 32).
+    [Authorize]
     public class AccountController : Controller
     {
         private readonly UserManager<AppUser> userManager;
@@ -17,9 +21,12 @@ namespace Lab10.Controllers
 
         // Registration ---------------------------------------------------
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Register() => View();
 
         [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(Register register)
         {
             if (ModelState.IsValid)
@@ -43,6 +50,7 @@ namespace Lab10.Controllers
 
         // Login ----------------------------------------------------------
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login(string? returnUrl)
         {
             Login login = new Login { ReturnUrl = returnUrl };
@@ -50,6 +58,8 @@ namespace Lab10.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(Login login)
         {
             if (ModelState.IsValid)

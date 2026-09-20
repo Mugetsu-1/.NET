@@ -49,6 +49,8 @@ or F5 in Visual Studio -> `https://localhost:7215` (http `http://localhost:5205`
 | 5 | Open `/Home/Secured` | `Hello SauTest` + a Logout button |
 | 6 | Click Logout | 302 back to `/`, and `/Home/Secured` is protected again |
 | 7 | Open `/Account/Login?returnUrl=https://evil.example.com` and log in | Redirected to `/` (the local-URL check in `AccountController` blocks the open redirect) |
+| 8 | POST a form without the hidden token (e.g. save the Register page HTML, delete `__RequestVerificationToken`, submit) | HTTP 400 - `[ValidateAntiForgeryToken]` on `Register`/`Login` blocks CSRF |
+| 9 | Open `/Account/Logout` while NOT logged in | Redirected to `/Account/Login` - the whole `AccountController` is `[Authorize]`, only `Register`/`Login` are `[AllowAnonymous]` |
 
 Check the row that was created:
 ```sql
@@ -70,6 +72,37 @@ Errors shown by the Register form (verified live):
 - `Password and Confirm Password do not match` (from `[Compare]` in `Models/Register.cs`)
 
 So `Test@123` works, `abc` does not.
+
+## 7. Mapping to the Unit 8 lab question (slide 70 of `Unit 8 Securing APP.pdf`)
+
+| Lab question says | Where it is implemented |
+| :-- | :-- |
+| "user authentication and authorization using ASP.NET Core Identity" | `Program.cs` -> `AddIdentity<AppUser, IdentityRole>()`, `UseAuthentication()` / `UseAuthorization()` |
+| "Configure Identity with Entity Framework Core and SQL Server" | Identity + EF Core SQL Server packages, `AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(...))` |
+| "create a custom AppUser class by extending IdentityUser" | `Models/AppUser.cs` (`AppUser : IdentityUser`) - slide 13 |
+| "configure an AppIdentityDbContext for storing Identity data" | `Models/AppIdentityDbContext.cs` (`IdentityDbContext<AppUser>`) - slide 14 |
+| "Configure the Identity services in Program.cs" | `AddIdentity<...>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders()` - slide 17 |
+| "create the required database using EF Core migrations" | `Migrations/Create.cs` (+ `Create.Designer.cs`) applied with `dotnet ef database update` -> 8 tables - slides 18-19 |
+| "user registration with fields such as username, email, password, and confirm password" | `Models/Register.cs` + `Views/Account/Register.cshtml` + `AccountController.Register` |
+| "implement login and logout functionality" | `Models/Login.cs` + `Views/Account/Login.cshtml` + `AccountController.Login` / `Logout` - slides 31-35 |
+| "illustrate the Authentication and authorization using [Authorize] attribute in a secured resource ... only the registered user gets access" | `HomeController.Secured` (`[Authorize]`) + `Views/Home/Secured.cshtml` -> "Hello &lt;user&gt;"; anonymous visitors are redirected to the login page - slides 36-39 |
+
+Extra patterns taken from the same slides:
+
+- `[Authorize]` on the whole `AccountController`, `[AllowAnonymous]` on `Register`/`Login` (slide 32).
+- `[ValidateAntiForgeryToken]` on both POST actions (slide 33) - also demonstrates the CSRF protection of section 8.3.3.
+- Local-URL check before `Redirect(login.ReturnUrl)` - demonstrates the open-redirection protection of section 8.3.4.
+
+Not required by the lab question (left out on purpose): the `AdminController` user CRUD of slides 20-29 and the Role/Claim/Policy authorization demos of section 8.2.
+
+## 8. If the database is missing ("transient failure" error)
+
+`InvalidOperationException: ... likely due to a transient failure. Consider enabling transient error resiliency by adding 'EnableRetryOnFailure'` is what EF Core prints when the **database does not exist**; `EnableRetryOnFailure` does not help. Check and fix:
+
+```
+sqlcmd -S SAUGAT\SQLEXPRESS -E -Q "SELECT name FROM sys.databases"     -- is IdentityUserDB listed?
+dotnet ef database update                                              -- if not, this creates it (8 tables)
+```
 
 ## If it fails
 - Keep `TrustServerCertificate=True` (required by EF Core 10)

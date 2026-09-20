@@ -21,6 +21,10 @@ The login page is reached in two different ways, and the `ReturnUrl` parameter d
 
 Both cases were tested: logging in from the Register → Login flow lands on `/` (Home), while logging in after being bounced from the Secured tab lands on `/Home/Secured`.
 
+### All the tables are created from the migration
+
+All eight Identity tables — `AspNetUsers`, `AspNetRoles`, `AspNetUserRoles`, `AspNetUserClaims`, `AspNetRoleClaims`, `AspNetUserLogins`, `AspNetUserTokens` and `__EFMigrationsHistory` — are created **from the EF Core migration**, not manually. The command `dotnet ef migrations add Create` generates `Migrations/Create.cs`, whose `Up()` method contains the `CreateTable(...)` calls for all eight tables, and `dotnet ef database update` applies it: EF Core first creates the **`IdentityUserDB`** database itself (if it does not already exist) and then executes the migration, which creates every table inside it. No table is created by hand in SSMS, and `EnsureCreated()` is not used here (that was the approach in Lab 8) — using migrations is exactly what the lab question asks for. After the migration runs, only `AspNetUsers` (the registered users) and `__EFMigrationsHistory` (the applied-migration record) contain rows, while the remaining six tables are created but remain empty because no roles, claims, external logins or tokens are used.
+
 In short: the same page is **blocked before login** (the visitor sees the login form) and **opens after login** (the visitor sees "Hello <user>"), which is exactly the behaviour the `[Authorize]` attribute produces.
 
 ### Why 6 of the 8 Identity tables stay empty

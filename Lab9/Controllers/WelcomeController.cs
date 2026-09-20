@@ -8,8 +8,8 @@ public class WelcomeController : Controller
     // Session: set data
     public IActionResult Index()
     {
-        HttpContext.Session.SetString("Name", "Tekendra");
-        HttpContext.Session.SetInt32("Age", 30);
+        HttpContext.Session.SetString("Name", "Saugat Bikram Thapa");
+        HttpContext.Session.SetInt32("Age", 21);
         return View();
     }
 
@@ -19,7 +19,7 @@ public class WelcomeController : Controller
         return View();
     }
 
-    // Query String: /Welcome/GetQueryString?name=Tek&age=30
+    // Query String: /Welcome/GetQueryString?name=Saugat&age=30
     public IActionResult GetQueryString(string name, int age)
     {
         User newUser = new User()

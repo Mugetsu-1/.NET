@@ -8,9 +8,21 @@
     <h5>SetHiddenFieldValue: User</h5>
     <div>
         <hr />
-        @Html.HiddenFor(model => model.Id)
-        <p>Name: @Html.DisplayFor(model => model.Name)</p>
-        <p>Age: @Html.DisplayFor(model => model.Age)</p>
+        <dl class="row">
+            @Html.HiddenFor(model => model.Id)
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Age)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Age)
+            </dd>
+        </dl>
     </div>
     <div>
         <input type="submit" value="Submit" />
